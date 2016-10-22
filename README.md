@@ -1,6 +1,6 @@
 # IR-Assignment2
 
-Comarison of different algorithms
+### Comarison of different algorithms
 
 | Evaluation Metric | Your Algorithm | Vector Space | BM25 | LM with Dirichlet | LM JM Smoothing |
 |-------------------|-----------------|---------------|---|--------------------|------------------|
@@ -35,3 +35,7 @@ Comarison of different algorithms
 |NDCG@10||0.6422|0.6086|0.2686|0.5326|
 |NDCG@20||0.4492|0.4301|0.3156|0.4176|
 |NDCG@100||0.4536|0.4205|0.2899|0.3912|
+
+### Summary of findings:
+For short queries, LM with dirichilet smoothing seems to give a better performance. When compared with other algorithms, it has atleast 0.2 more from P@5. It has better recall, MAP and NDCG.
+However for longer queries, results were similar. Certain algorithms performed better at certain instances. Eg, vector space perfomed best for P@5, Recall, MAP and NDCG. However for P@20, LM with dirichlet smoorthing performed the best. This may be attributed due to the fact that since vector model has more words, it might be working better.
